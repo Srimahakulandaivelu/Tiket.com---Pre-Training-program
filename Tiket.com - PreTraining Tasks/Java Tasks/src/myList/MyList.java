@@ -1,3 +1,5 @@
+package myList;
+
 public class MyList{
     // Initalising the array with the size of 100
     // A pointer to follow the last filled index
