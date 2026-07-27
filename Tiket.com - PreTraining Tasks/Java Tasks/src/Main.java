@@ -1,6 +1,8 @@
 import myList.MyList;
 import myList.GenericMyList;
 import employee.Employee;
+import exception.numberValidator;
+import exception.moreThanOneDigitException;
 
 import java.util.Date;
 
@@ -41,5 +43,14 @@ public class Main{
         employeeList.add(emp2);
 
         employeeList.display();
+
+        // Testing custom exceptions
+
+        try{
+            numberValidator.validate(25);
+            numberValidator.validate(7);
+        } catch(moreThanOneDigitException e){
+            System.out.println(e.getMessage());
+        }
     }
 }
