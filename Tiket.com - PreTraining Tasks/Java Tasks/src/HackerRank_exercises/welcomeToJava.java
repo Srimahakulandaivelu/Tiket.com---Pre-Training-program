@@ -1,0 +1,11 @@
+package HackerRank_exercises;
+
+public class welcomeToJava {
+
+    public static void main(String[] args) {
+        
+        System.out.println("Hello, World.");
+        System.out.println("Hello, Java.");
+
+    }
+}
