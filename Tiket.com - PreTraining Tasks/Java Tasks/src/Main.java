@@ -3,6 +3,8 @@ import myList.GenericMyList;
 import employee.Employee;
 import exception.numberValidator;
 import exception.moreThanOneDigitException;
+import bank.HDFC;
+import bank.ICICI;
 
 import java.util.Date;
 
@@ -23,7 +25,7 @@ public class Main{
 
         intList.display();
 
-        //initializing a generic list with string as type imput
+        //initializing a generic list with string as type input
 
         GenericMyList<String> stringList = new GenericMyList<>();
 
@@ -52,5 +54,15 @@ public class Main{
         } catch(moreThanOneDigitException e){
             System.out.println(e.getMessage());
         }
+
+        // Checking the calculateCharge
+
+        ICICI icici = new ICICI();
+        HDFC hdfc = new HDFC();
+
+        double amount = 5000;
+
+        System.out.println("ICICI Charge : Rs " + icici.calculateCharge(amount));
+        System.out.println("HDFC Charge : Rs " + hdfc.calculateCharge(amount));
     }
 }
