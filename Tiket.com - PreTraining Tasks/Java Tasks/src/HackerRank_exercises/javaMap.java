@@ -1,0 +1,36 @@
+package HackerRank_exercises;//Complete this code or write your own from scratch
+import java.util.*;
+import java.io.*;
+
+class javaMap{
+    public static void main(String []argh)
+    {
+        Scanner in = new Scanner(System.in);
+        int n=in.nextInt();
+        in.nextLine();
+
+        Map<String, Integer> mpp = new HashMap<>();
+
+        for(int i=0;i<n;i++)
+        {
+            String name=in.nextLine();
+            int phone=in.nextInt();
+            in.nextLine();
+
+            mpp.put(name, phone);
+        }
+
+        while(in.hasNext())
+        {
+            String s=in.nextLine();
+            if(mpp.containsKey(s)){
+                System.out.println(s + "=" + mpp.get(s));
+            } else {
+                System.out.println("Not found");
+            }
+        }
+    }
+}
+
+
+
