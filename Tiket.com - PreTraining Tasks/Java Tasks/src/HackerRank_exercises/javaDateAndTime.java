@@ -2,7 +2,7 @@ package HackerRank_exercises;
 
 import java.util.Calendar;
 
-class javaDateAndtime {
+class javaDateAndTime {
 
     /*
      * Complete the 'findDay' function below.
