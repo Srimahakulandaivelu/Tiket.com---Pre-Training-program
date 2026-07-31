@@ -1,0 +1,25 @@
+db.students.aggregate([
+  {
+    $unwind:"$marks"
+  },
+  {
+    $match:{
+      "marks.courseName":"MongoDB"
+    }
+  },
+  {
+    $sort:{
+      "marks.marks":-1
+    }
+  },
+  {
+    $linit:3
+  },
+  {
+    $project:{
+      name:1,
+      score:"$marks.marks",
+      _id:0
+    }
+  }
+])

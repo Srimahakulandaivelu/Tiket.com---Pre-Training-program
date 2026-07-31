@@ -1,0 +1,10 @@
+db.students.updateOne(
+    {_id:1},
+    {
+      $pull:{
+        courses:{
+          courseId:104
+        }
+      }
+    }
+)

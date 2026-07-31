@@ -1,0 +1,9 @@
+db.students.insertOne({
+  _id:4,
+  name:"Kumar",
+  age:23,
+  phone:"9000011111",
+  address:{},
+  courses:[],
+  marks:[]
+})

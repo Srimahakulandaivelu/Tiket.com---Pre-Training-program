@@ -1,0 +1,13 @@
+db.students.find(
+  {
+    _id:1,
+    "marks.courseName":"MongoDB"
+  },
+  {
+    marks:{
+      $elemMatch:{
+        courseName:"MongoDB"
+      }
+    }
+  }
+)

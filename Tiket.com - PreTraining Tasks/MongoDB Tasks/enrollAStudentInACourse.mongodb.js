@@ -1,0 +1,11 @@
+db.students.updateOne(
+  {_id:1},
+  {
+    $push:{
+      courses:{
+        courseId:104,
+        courseName:"NodeJS"
+      }
+    }
+  }
+)

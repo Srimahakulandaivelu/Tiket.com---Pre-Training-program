@@ -1,0 +1,13 @@
+db.students.aggregate([
+  {
+    $unwind:"$courses"
+  },
+  {
+  $group:{
+    _id:"$courses.courseName",
+  studentCount:{
+    $sum:1
+  }
+  }
+  }
+])

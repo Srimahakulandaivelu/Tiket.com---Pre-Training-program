@@ -1,0 +1,8 @@
+db.students.updateMany(
+  {},
+  {
+    $set:{
+      graduated:false
+    }
+  }
+)

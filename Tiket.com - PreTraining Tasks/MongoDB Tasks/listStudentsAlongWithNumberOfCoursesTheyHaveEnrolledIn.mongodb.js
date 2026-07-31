@@ -1,0 +1,10 @@
+db.students.aggregate([
+  {
+    $project:{
+      name:1,
+      numberOfCourses:{
+        $size:"$courses"
+      }
+    }
+  }
+])

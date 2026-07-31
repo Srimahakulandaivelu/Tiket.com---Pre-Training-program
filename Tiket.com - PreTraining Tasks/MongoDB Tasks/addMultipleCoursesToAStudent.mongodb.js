@@ -1,0 +1,19 @@
+db.students.updateOne(
+  {_id:2},
+  {
+    $push:{
+      courses:{
+        $each:[
+          {
+            courseId:105,
+            courseName:"React"
+          },
+          {
+            courseId:106,
+            courseName:"Angular"
+          }
+        ]
+      }
+    }
+  }
+)

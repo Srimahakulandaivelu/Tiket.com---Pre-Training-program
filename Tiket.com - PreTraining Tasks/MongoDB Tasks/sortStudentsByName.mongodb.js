@@ -1,0 +1,5 @@
+db.students.find().sort(
+  {
+    name:1
+  }
+)
