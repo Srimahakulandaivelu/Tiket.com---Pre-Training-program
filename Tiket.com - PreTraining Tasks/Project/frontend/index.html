@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskboard - Todo Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--importing external font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+    <div class="logo">
+        <h1>TaskBoard</h1>
+        <p>Organize your daily Tasks</p>
+    </div>
+
+    <div class="status">
+        <i class="fa-solid fa-circle"></i>
+        Dashboard Active
+    </div>
+    </header>
+
+    <section class="stats">
+
+        <div class="start-card">
+            <h3>TotalTasks</h3>
+            <h2 id="totalTasks">0</h2>
+        </div>
+
+        <div class="start-card-completed">
+            <h3>Completed Tasks</h3>
+            <h2 id="completedTasks">0</h2>
+        </div>
+
+        <div class="start-card-pending">
+            <h3>Pending Tasks</h3>
+            <h2 id="pendingTasks">0</h2>
+        </div>
+
+    </section>
+
+    <section class="add-task">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="What do you want to do today?">
+
+        <select id="category">
+
+            <option>Personal</option>
+            <option>Work</option>
+            <option>Study</option>
+            <option>Shopping</option>
+
+        </select>
+
+        <button id="addBtn">
+            <i class="fa-solid fa-plus"></i>
+            Add Task
+        </button>
+    </section>
+
+    <section class="task-section">
+        <div class="section-title">
+            <h2>Current Tasks</h2>
+            <span id="taskCount">0 Tasks</span>
+        </div>
+
+        <div id="taskContainer" class="task-container">
+
+        </div>
+    </section>
+</div>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
